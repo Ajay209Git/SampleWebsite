@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Excel Coaching Classes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Excel Coaching Classes</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#faculty">Faculty</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#photos">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="#enroll" class="enroll-btn">Enroll Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <h2>Your Success Starts Here!</h2>
+      <p>Expert coaching for school, college, and competitive exams. Join us for quality education and proven results.</p>
+      <a href="#enroll" class="cta">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Photo Slider Section -->
+  <section id="photos">
+    <div class="container">
+      <h2>Our Coaching Moments</h2>
+      <div class="slider">
+        <button class="slider-btn prev">&#10094;</button>
+        <div class="slider-images">
+          <img src="slider1.jpg" alt="Classroom" class="slider-image active">
+          <img src="slider2.jpg" alt="Students" class="slider-image">
+          <img src="slider3.jpg" alt="Events" class="slider-image">
+          <img src="slider4.jpg" alt="Awards" class="slider-image">
+        </div>
+        <button class="slider-btn next">&#10095;</button>
+      </div>
+      <div class="slider-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+  <!-- End Photo Slider Section -->
+
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        Excel Coaching Classes has been nurturing students for over a decade. With experienced teachers and a student-first approach, we help learners achieve their academic and career goals.
+      </p>
+    </div>
+  </section>
+
+  <section id="courses">
+    <div class="container">
+      <h2>Courses Offered</h2>
+      <ul class="courses-list">
+        <li><strong>School Tuitions:</strong> 6th-12th (All Boards, Science/Commerce/Arts)</li>
+        <li><strong>Competitive Exams:</strong> IIT-JEE, NEET, CET, Olympiads</li>
+        <li><strong>Professional Courses:</strong> CA, CS, CMA Foundation</li>
+        <li><strong>Skill Development:</strong> Spoken English, Computer Basics</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="faculty">
+    <div class="container">
+      <h2>Our Faculty</h2>
+      <div class="faculty-list">
+        <div class="faculty-member">
+          <img src="faculty1.jpg" alt="Faculty 1">
+          <h3>Mr. Sharma</h3>
+          <p>Physics & Mathematics Expert, 15+ years experience.</p>
+        </div>
+        <div class="faculty-member">
+          <img src="faculty2.jpg" alt="Faculty 2">
+          <h3>Ms. Verma</h3>
+          <p>Chemistry & Biology Specialist, 10+ years teaching.</p>
+        </div>
+        <div class="faculty-member">
+          <img src="faculty3.jpg" alt="Faculty 3">
+          <h3>Mr. Gupta</h3>
+          <p>Commerce & Accounts Mentor, CA, 8+ years.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <div class="container">
+      <h2>Student Testimonials</h2>
+      <div class="testimonial-list">
+        <blockquote>
+          “The teachers are very supportive. I cracked my NEET because of Excel Coaching!”<br>
+          <span>- Priya, NEET Topper</span>
+        </blockquote>
+        <blockquote>
+          “Highly recommended for school tuitions. Concepts are taught clearly.”<br>
+          <span>- Rahul, Class 10 CBSE</span>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>
+        <strong>Address:</strong> 123 Main Road, City, State<br>
+        <strong>Phone:</strong> +91-9876543210<br>
+        <strong>Email:</strong> info@excelcoaching.com
+      </p>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="formMessage"></div>
+    </div>
+  </section>
+
+  <section id="enroll">
+    <div class="container">
+      <h2>Enroll Now</h2>
+      <p>Fill the form below to reserve your seat!</p>
+      <form id="enrollForm">
+        <input type="text" name="studentName" placeholder="Student Name" required>
+        <input type="email" name="studentEmail" placeholder="Email" required>
+        <input type="tel" name="studentPhone" placeholder="Phone Number" required>
+        <select name="course" required>
+          <option value="">Select Course</option>
+          <option value="School Tuitions">School Tuitions</option>
+          <option value="Competitive Exams">Competitive Exams</option>
+          <option value="Professional Courses">Professional Courses</option>
+          <option value="Skill Development">Skill Development</option>
+        </select>
+        <button type="submit">Enroll</button>
+      </form>
+      <div id="enrollMessage"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Excel Coaching Classes. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

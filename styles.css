@@ -1,0 +1,291 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  background: #f7f7f7;
+}
+
+header {
+  background: #1a237e;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0.5em 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  gap: 1em;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.2s;
+}
+
+nav a:hover, nav .enroll-btn {
+  color: #ffeb3b;
+}
+
+nav .enroll-btn {
+  background: #ffeb3b;
+  color: #1a237e;
+  padding: 0.3em 0.7em;
+  border-radius: 4px;
+}
+
+section {
+  padding: 3em 0 2em 0;
+  background: #fff;
+}
+
+section:nth-child(even) {
+  background: #ededed;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+#hero {
+  background: linear-gradient(90deg, #1a237e 60%, #3949ab 100%);
+  color: #fff;
+  text-align: center;
+  padding: 4em 0 3em 0;
+}
+
+#hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+#hero .cta {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.7em 2em;
+  background: #ffeb3b;
+  color: #1a237e;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1em;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.courses-list {
+  list-style: none;
+  padding: 0;
+}
+
+.courses-list li {
+  background: #e3eafc;
+  margin: 0.3em 0;
+  padding: 0.7em;
+  border-radius: 5px;
+}
+
+.faculty-list {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.faculty-member {
+  background: #f5f5ff;
+  padding: 1em;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 8px rgba(26,35,126,0.07);
+}
+
+.faculty-member img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5em;
+  background: #ddd;
+}
+
+.testimonial-list {
+  display: grid;
+  gap: 1.5em;
+  grid-template-columns: 1fr 1fr;
+}
+
+.testimonial-list blockquote {
+  background: #fffbe7;
+  border-left: 4px solid #ffeb3b;
+  margin: 0;
+  padding: 1em;
+  border-radius: 6px;
+  font-style: italic;
+}
+
+/* Photo Slider Styles */
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 2em auto 1em auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(30,30,60,0.08);
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.slider-images {
+  width: 100%;
+  display: flex;
+  transition: transform 0.5s;
+  position: relative;
+}
+
+.slider-image {
+  width: 100%;
+  min-width: 100%;
+  display: none;
+  object-fit: cover;
+  height: 320px;
+}
+
+.slider-image.active {
+  display: block;
+}
+
+.slider-btn {
+  background: rgba(26,35,126,0.7);
+  color: #fff;
+  border: none;
+  font-size: 2em;
+  padding: 0.3em 0.6em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.slider-btn:hover {
+  opacity: 1;
+}
+
+.slider-btn.prev {
+  left: 15px;
+}
+.slider-btn.next {
+  right: 15px;
+}
+
+.slider-dots {
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  background: #c5cae9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #1a237e;
+}
+
+#contact form, #enrollForm {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  max-width: 400px;
+}
+
+input, textarea, select, button {
+  font-size: 1em;
+  padding: 0.7em;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+button {
+  background: #1a237e;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #3949ab;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 1em;
+}
+
+@media (max-width: 768px) {
+  header .container, .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav {
+    flex-direction: column;
+    gap: 0.6em;
+  }
+  .faculty-list, .testimonial-list {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #hero h2 {
+    font-size: 2em;
+  }
+  .slider-image {
+    height: 180px;
+  }
+}
